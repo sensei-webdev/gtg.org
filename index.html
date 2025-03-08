@@ -10,6 +10,7 @@
     <meta name="author" content="Abu Bakar">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="6GtrWdssPpGLWZwSVlMVaa8L8BxgOj14_hJ5mrroHNI" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="canonical" href="https://abubakar5173.github.io/gtg.org">
     <link rel="icon" href="Assets/icon.png" type="image/png">
     <link rel="shortcut icon" href="Assets/icon.png" type="image/png">
@@ -245,7 +246,7 @@
             </div>
         </section>
     </main>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="AddCard.js"></script>
@@ -256,6 +257,7 @@
     <script src="animation.js"></script>
 
     <script>
+         AOS.init();
         var swiper = new Swiper("#courses-container .mySwiper", {
             slidesPerView: 1,
             spaceBetween: 5,
