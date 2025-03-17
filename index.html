@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <nav id="nav" class="fade-in">
+    <nav id="nav" data-aos="fade-down" data-aos-duration="1000">
         <a href="#">
             <span class="logo">Galaxy The Global</span>
         </a>
@@ -46,7 +46,7 @@
     <!-- Home Section -->
 
     <main id="home-tab" style="display: none;">
-        <section id="hero" class="fade-in">
+        <section id="hero" data-aos="fade-up" data-aos-duration="1000">
             <div class="left">
                 <h1>
                     <span>Empowering</span>
@@ -65,7 +65,7 @@
             <img id="heroImg" src="Assets/dayhero.png" alt="">
         </section>
 
-        <section id="feature" class="fade-in">
+        <section id="feature" data-aos="fade-up" data-aos-duration="1000">
             <a href="#university-courses" id="goToUniversityCourses">
                 <article class="card-ftr">
                     <img src="Assets/Master1.png" 3alt="Certified" class="bi">
@@ -82,7 +82,7 @@
             </a>
         </section>
 
-        <section id="why-us" class="fade-in">
+        <section id="why-us" data-aos="fade-up" data-aos-duration="1000">
             <article id="special-case">
                 <h1>Why GTG Acadmey</h1>
                 <p>
@@ -95,7 +95,7 @@
             </article>
         </section>
 
-        <section id="course-category" class="fade-in">
+        <section id="course-category" data-aos="fade-up" data-aos-duration="1000">
 
             <!-- Filter Switch -->
             <div id="firstFilter" class="filter-switch">
@@ -116,7 +116,7 @@
             </div>
         </section>
 
-        <section id="faq" class="fade-in">
+        <section id="faq" data-aos="fade-up" data-aos-duration="1000">
             <h1>Frequently Asked Questions</h1>
             <div class="radio">
                 <label>
@@ -137,7 +137,7 @@
                 </label>
             </div>
 
-            <div id="faq-container">
+            <div id="faq-container" data-aos="fade-up" data-aos-duration="1000">
                 <div class="general" id="F-gene">
                     <!-- FAQs added Dynamically -->
                 </div>
@@ -153,7 +153,7 @@
             </div>
         </section>
 
-        <footer class="fade-in">
+        <footer data-aos="fade-up" data-aos-duration="1000">
             <div class="footer-up">
                 <div class="footerLink">
                     <h3>Institutional Information</h3>
@@ -210,43 +210,11 @@
         </section>
 
         <!-- Course Section -->
-        <section class="CourseContainer">
-            <div class="radio-input">
-                <label for="value-1">
-                    <input value="value-1" name="value-radio" id="value-1" type="radio" checked="">
-                    <span>Skills Specific</span>
-                </label>
-                <label for="value-2">
-                    <input value="value-2" name="value-radio" id="value-2" type="radio">
-                    <span>With Graduate Degree</span>
-                </label>
-                <span class="selection"></span>
-            </div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper cardsofComputer">
-                    <!-- <article class="Course-Card">
-                        <img src="Assets-crd/ADCA.webp">
-                        <div class="info">
-                            <div class="meta">
-                                <span class="status">Trending🔥</span>
-                                <span class="ratings">⭐4.5/5</span>
-                            </div>
-                            <h3>Advance Diploma in Computer Application</h3>
-                            <p>Learn advance about Computer with basics</p>
-                            <div class="details">
-                                <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i>9,900/-</span>
-                                <span class="duration"><i class="fa-regular fa-clock"></i>12 Months</span>
-                            </div>
-                        </div>
-                    </article> -->
-                </div>
-                <div class="swiper-wrapper cardsofUniversity">
-                    <!-- University Cards Added Dynamically -->
-                </div>
-            </div>
+        <section class="Coursecontainer">
+
         </section>
     </main>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="AddCard.js"></script>
@@ -254,10 +222,11 @@
     <script src="courses-script.js"></script>
     <script src="addCards-in-CourseTab.js"></script>
     <script src="faqs.js"></script>
-    <script src="animation.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
-         AOS.init();
+        AOS.init();
+
         var swiper = new Swiper("#courses-container .mySwiper", {
             slidesPerView: 1,
             spaceBetween: 5,
