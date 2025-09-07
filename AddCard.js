@@ -59,7 +59,7 @@ WhyUsCards.forEach(course => {
 
 const faqsCourses = [
     {
-        question: "What types of courses are offered at Galaxy The Global?",
+        question: "What types of courses are offered at Global Training Ground?",
         answer: "We offer a wide range of courses, including Computer and IT courses like Programming, Financial Accounting, and AutoCAD, university courses in Arts, Science, Engineering, and Law, and vocational and technical courses."
     },
     {
@@ -112,11 +112,11 @@ const faqsFees = [
 
 const faqsGeneral = [
     {
-        question: "What is Galaxy The Global (GTG)?",
-        answer: "Galaxy The Global (GTG) is a Computer Training Institute specializing in providing quality education and training in various fields, including computer and IT courses, university programs, and technical skills."
+        question: "What is Global Training Ground (GTG)?",
+        answer: "Global Training Ground (GTG) is a Computer Training Institute specializing in providing quality education and training in various fields, including computer and IT courses, university programs, and technical skills."
     },
     {
-        question: "Where is Galaxy The Global located?",
+        question: "Where is Global Training Ground located?",
         answer: "Our institute is located in [Insert location here]. For exact directions, check the 'Contact Us' section on our website."
     },
     {
@@ -158,3 +158,4 @@ faqsFees.forEach(item => {
 faqsGeneral.forEach(item => {
     appendFaqsInSection("#F-gene", item.question, item.answer);
 });
+
